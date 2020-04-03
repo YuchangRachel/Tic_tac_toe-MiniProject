@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tic Tac Toe</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+		<script type="text/javascript" src="game.js"></script>
+	</head>
+	<body onload="start()">
+		<div class="gamewrap">
+			<h1>Tic Tac Toe</h1>
+			<div class="container">
+				<h2 id="winner"></h2>
+				<h2 id="currentplayer"></h2>
+				<div class="board">
+					<div id="row-1">
+						<div class="box" onclick="play(this,1)">&nbsp;</div>
+						<div class="box" onclick="play(this,2)">&nbsp;</div>
+						<div class="box" onclick="play(this,4)">&nbsp;</div>
+					</div>
+					<div id="row-2">
+						<div class="box" onclick="play(this,8)">&nbsp;</div>
+						<div class="box" onclick="play(this,16)">&nbsp;</div>
+						<div class="box" onclick="play(this,32)">&nbsp;</div>
+					</div>
+					<div id="row-3">
+						<div class="box" onclick="play(this,64)">&nbsp;</div>
+						<div class="box" onclick="play(this,128)">&nbsp;</div>
+						<div class="box" onclick="play(this,256)">&nbsp;</div>
+					</div>
+				</div>
+				<div class="scoreApart">
+					<h2 id="player1scoretitle"></h2><a id="player1score"></a>
+					<h2 id="player2scoretitle"></h2><a id="player2score"></a>
+					<h2 id="drawtitle">Tie Game</h2><a id="drawscore"></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
